@@ -17,9 +17,9 @@ app.use(bodyParser.json())
 
 app.use(require('./routes/usuario'));
 
-console.log(process.env.URLDB);
 
-mongoose.connect(process.env.URLDB, {
+
+mongoose.connect('mongodb+srv://strider:8fLQdqJ8sAPWQeXM@cluster0.e6kio.mongodb.net/test', {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
