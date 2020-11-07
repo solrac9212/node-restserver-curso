@@ -19,7 +19,7 @@ app.use(require('./routes/usuario'));
 
 
 
-mongoose.connect(process.env.URLDB, {
+mongoose.connect('mongodb+srv://strider:8fLQdqJ8sAPWQeXM@cluster0.e6kio.mongodb.net/test', {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
