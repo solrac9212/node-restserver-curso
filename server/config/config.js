@@ -17,9 +17,9 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 //==================================
 
 let urlDB;
-if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb://localhost:27017/cafe'
-} else {
-    urlDB = ' mongodb+srv://strider:8fLQdqJ8sAPWQeXM@cluster0.e6kio.mongodb.net/test'
-}
-process.env.URlDB = urlDB;
+// if (process.env.NODE_ENV === 'dev') {
+//     urlDB = 'mongodb://localhost:27017/cafe'
+// } else {
+urlDB = ' mongodb+srv://strider:8fLQdqJ8sAPWQeXM@cluster0.e6kio.mongodb.net/test'
+    // }
+    // process.env.URlDB = urlDB;
