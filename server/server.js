@@ -14,12 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
+//confgiracion gobal de rutas
+app.use(require('./routes/index'));
 
-app.use(require('./routes/usuario'));
 
 
-
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.URlDB, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
